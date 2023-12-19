@@ -1,0 +1,32 @@
+[user]
+	email = bertrand.chardon@doctrine.fr
+	name = Bertrand Chardon
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	sw = checkout
+	discard = checkout --
+	dc = checkout --
+	pom = pull origin master
+	cb = current-branch
+	pcb = pull-current-branch 
+	unstage = reset HEAD --
+	rf = reflog
+[color]  
+	diff = auto
+	interactive = auto
+	status = auto
+	branch = auto
+[core]
+	editor = /usr/bin/vim
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[pull]
+	rebase = false 
+[push]
+    autoSetupRemote = true
